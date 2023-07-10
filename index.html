@@ -19,10 +19,11 @@
       <!--
          CSS
          ============================================= -->
+      <link rel="stylesheet" href="css/linearicons.css">
       <link rel="stylesheet" href="css/font-awesome.min.css">
       <link rel="stylesheet" href="css/main.css">
 	   <link rel="stylesheet" href="css/style-media-queries.css">
-
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	   <link rel='stylesheet'  href='css/bootstrap.css' type='text/css'  />
 	   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
    
@@ -31,7 +32,7 @@
   
 
    <body class="page-template-template-our-properties-single  user-navigated-from-a-page-on-the-site">
-      
+ 
       <div id="main-wrapper">
          <header class="header hidden-xs hidden-sm">
             <div class="container">
@@ -236,7 +237,27 @@
          </div>
          <main>
             
-			
+            <div class="properties-single-slideshow-info d-nome-700px" data-aios-reveal="false" data-aios-animation="fadeInRight" data-aios-animation-delay="0s" data-aios-animation-reset="false" data-aios-animation-offset="0.3" style="right: 0px;"  id="properties-single-slideshow-info">
+               <span class="show-hide-btn" style="width: 350px; left: -155px; " id="show-hide-btn">
+                   Hide Details
+               </span>
+               
+               <div class="properties-single-slideshow-info-address">
+                   1021 N. Beverly Dr.
+                   <span>Beverly Hills, CA 90210</span>
+               </div>
+           
+               <div class="properties-single-slideshow-info-price notranslate">
+                   $75,000,000
+               </div>
+           
+               <ul class="properties-single-slideshow-info-extras">
+                   <li>9 <span class="icon-beds"></span> <em>Beds</em></li>
+                   <li>12 <span class="icon-baths"></span> <em>Baths</em></li>
+                   <li>18,000+ <span class="icon-sqft"></span> <em>SQ. FT.</em></li>
+                   <li>1 acre <span class="icon-lots"></span> <em>Lot Size</em></li>
+               </ul>
+           </div>
 
 
             <div id="inner-page-wrapper" class="inner-page-1712-thurston-dr">
@@ -249,10 +270,11 @@
                               </div>
                               <div class="our-properties-single-wrap" >
                                  <div class="our-properties-single-slideshow-wrap">
-                                    <a href="#" class="our-properties-single-slideshow-logo">
-                                    <img src="https://ogroup.com/wp-content/themes/ogroup.com/images/website-logo-ip-a.png" alt="Website Logo">
-                                    </a>
-                                  </div>  
+                                    <a href="https://ogroup.com/"
+                                    class="our-properties-single-slideshow-logo">
+                                 <img src="https://ogroup.com/wp-content/themes/ogroup.com/images/website-logo-ip-a.png"
+                                    alt="Website Logo">
+                                 </a> 
                                   
                                   <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                                     <div class="carousel-inner our-properties-single-slideshow-slide">
@@ -266,15 +288,34 @@
                                         <img src="https://ogroup.com/wp-content/uploads/2023/02/1712-Thursten-Drive-75.jpg" class="d-block w-100" alt="...">
                                       </div>
                                     </div>
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+                                    <div class="properties-single-slideshow-info" data-aos="fade-down">
+                                        
+                                          <div class="properties-status"></div>
+                                          <div class="properties-single-slideshow-info-address">1712 THURSTON DR.
+                                             <span>Laguna Beach, CA 92651</span>
+                                          </div>
+                                          <div class="properties-single-slideshow-info-price notranslate">
+                                             $7,495,000
+                                          </div>
+                                          <ul class="properties-single-slideshow-info-extras">
+                                             <li>6 <span class="icon-beds"></span> <em>Beds</em>                                             </li>
+                                             <li>6 <span class="icon-baths"></span> <em>Baths</em>                                            </li>
+                                             <li>5,353 <span class="icon-sqft"></span> <em>SQ. FT.</em></li>
+                                             <li>.44 <span class="icon-lots"></span> <em>Lot Size</em></li>
+                                          </ul>
+                                       </div>
+                                    <button class="carousel-control-pre"  type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                      <span class="carousel-control-prev-ico" style="height: 50px;" aria-hidden="true"></span>
                                       <span class="visually-hidden">Previous</span>
                                     </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <button class="carousel-control-nex" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                      <span class="carousel-control-next-icn" aria-hidden="true"></span>
                                       <span class="visually-hidden">Next</span>
                                     </button>
                                   </div>
+
+                                  
 
                                  <div id="inner-page-breadcrumbs" class=" inner-page-breadcrumbs breadcrumbs-1712-thurston-dr clone hidden-md hidden-lg">
                                     <div class="container">
@@ -291,7 +332,75 @@
                                     </div>
                                  </div>
                                 
-                                 <div class="our-properties-single-floating-thumbnail-mobile-wrap hidden-md hidden-lg">
+                                
+                                 <div class="our-properties-single-floating-thumbnail-wrap hidden-xs hidden-sm" style="margin-top: 100px;" id="our-properties-single-floating-thumbnail-wrap">
+                                    <span class="our-properties-single-floating-thumbnail-close" id="our-properties-single-floating-thumbnail-close"></span>
+                                    <div class="our-properties-single-floating-thumbnail-list clearfix" data-simplebar="init">
+                                       <div class="simplebar-track vertical" style="visibility: visible;">
+                                          <div class="simplebar-scrollbar" style="visibility: visible; top: 0px; height: 134px;"></div>
+                                       </div>
+                                       <div class="simplebar-track horizontal" style="visibility: visible;">
+                                          <div class="simplebar-scrollbar" style="visibility: visible; left: 0px; width: 25px;"></div>
+                                       </div>
+                                       <div class="simplebar-scroll-content" style="padding-right: 17px; margin-bottom: -34px;">
+                                          <div class="simplebar-content" style="padding-bottom: 17px; margin-right: -17px; margin-top: -150px;">
+                                             <div class="our-properties-single-floating-thumbnail">
+                                                <canvas style="background-image: url(https://ogroup.com/wp-content/uploads/2022/09/1.11.jpg);" width="197" height="128"></canvas>
+                                             </div>
+                                             <div class="our-properties-single-floating-thumbnail">
+                                                <canvas style="background-image: url(https://ogroup.com/wp-content/uploads/2022/09/2.1.jpg);" width="197" height="128"></canvas>
+                                             </div>
+                                             <div class="our-properties-single-floating-thumbnail">
+                                                <canvas style="background-image: url(https://ogroup.com/wp-content/uploads/2022/09/1.1-scaled.jpg);" width="197" height="128"></canvas>
+                                             </div>
+                                             <div class="our-properties-single-floating-thumbnail">
+                                                <canvas style="background-image: url(https://ogroup.com/wp-content/uploads/2022/09/1.4.jpg);" width="197" height="128"></canvas>
+                                             </div>
+                                             <div class="our-properties-single-floating-thumbnail">
+                                                <canvas style="background-image: url(https://ogroup.com/wp-content/uploads/2022/09/2.5.jpg);" width="197" height="128"></canvas>
+                                             </div>
+                                             <div class="our-properties-single-floating-thumbnail">
+                                                <canvas style="background-image: url(https://ogroup.com/wp-content/uploads/2022/09/2.3.jpg);" width="197" height="128"></canvas>
+                                             </div>
+                                             <div class="our-properties-single-floating-thumbnail">
+                                                <canvas style="background-image: url(https://ogroup.com/wp-content/uploads/2022/09/3.1.jpg);" width="197" height="128"></canvas>
+                                             </div>
+                                             <div class="our-properties-single-floating-thumbnail">
+                                                <canvas style="background-image: url(https://ogroup.com/wp-content/uploads/2022/09/3.2.jpg);" width="197" height="128"></canvas>
+                                             </div>
+                                             <div class="our-properties-single-floating-thumbnail">
+                                                <canvas style="background-image: url(https://ogroup.com/wp-content/uploads/2022/09/3.41.jpg);" width="197" height="128"></canvas>
+                                             </div>
+                                             <div class="our-properties-single-floating-thumbnail">
+                                                <canvas style="background-image: url(https://ogroup.com/wp-content/uploads/2022/09/6.jpg);" width="197" height="128"></canvas>
+                                             </div>
+                                             <div class="our-properties-single-floating-thumbnail">
+                                                <canvas style="background-image: url(https://ogroup.com/wp-content/uploads/2022/09/8.2.jpg);" width="197" height="128"></canvas>
+                                             </div>
+                                             <div class="our-properties-single-floating-thumbnail">
+                                                <canvas style="background-image: url(https://ogroup.com/wp-content/uploads/2022/09/9.1.jpg);" width="197" height="128"></canvas>
+                                             </div>
+                                             <div class="our-properties-single-floating-thumbnail">
+                                                <canvas style="background-image: url(https://ogroup.com/wp-content/uploads/2022/09/9.3.jpg);" width="197" height="128"></canvas>
+                                             </div>
+                                             <div class="our-properties-single-floating-thumbnail">
+                                                <canvas style="background-image: url(https://ogroup.com/wp-content/uploads/2022/09/9.5.jpg);" width="197" height="128"></canvas>
+                                             </div>
+                                             <div class="our-properties-single-floating-thumbnail">
+                                                <canvas style="background-image: url(https://ogroup.com/wp-content/uploads/2022/09/10.11.jpg);" width="197" height="128"></canvas>
+                                             </div>
+                                             <div class="our-properties-single-floating-thumbnail">
+                                                <canvas style="background-image: url(https://ogroup.com/wp-content/uploads/2022/09/2.6.jpg);" width="197" height="128"></canvas>
+                                             </div>
+                                             <div class="our-properties-single-floating-thumbnail">
+                                                <canvas style="background-image: url(https://ogroup.com/wp-content/uploads/2022/09/2.8.jpg);" width="197" height="128"></canvas>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 
+                                 <div class="our-properties-single-floating-thumbnail-mobile-wrap hidden-md active hidden-lg">
                                     <div id="our-properties-single-floating-thumbnail-mobile-list" class="our-properties-single-floating-thumbnail-mobile-list clearfix">
                                        <a href="#" class="our-properties-single-floating-thumbnail-mobile active">
                                           <img width="197" height="120" src="https://ogroup.com/wp-content/uploads/2023/02/1712-Thursten-Drive-103-1.jpg">
@@ -350,65 +459,275 @@
                                     </div>
                                  </div>
 
-
+                              
+                                 
                                  <div class="our-properties-single-info" >
                                     <div class="container">
                                        <div class="row">
-                                          <div class="col-md-8">
+                                          <div class="col-md-7" data-aos="fade-up">
 
                                              <div class="our-properties-single-content-wrap">
-                                                <h1 class="entry-title our-properties-single-title">1712 THURSTON DR.</h1>
-                                                <div class="our-properties-single-content">
+                                                <h1 class="entry-title our-properties-single-title" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">1712 THURSTON DR.</h1>
+                                                <div class="our-properties-single-content" data-aos="fade-up">
                                                    The Wave House, a magnificent architectural gem perched atop the breathtaking cliffs of Laguna Beach, invites you to experience the ultimate in coastal living. Designed by the award-winning architect Sigrid Miller Pollin AIA, this masterpiece was inspired by the organic forms of Spanish great Antonio Gaudi and the challenging topography of the site. The home's curvilinear design follows the terrain, cascading down the cliffs to showcase the dramatic ocean views, while offering over 5300 square feet of luxurious living space. Perfect for entertaining or for families with older children, the home features two separate living areas, 6 bedrooms, 6 bathrooms, and all the amenities you would expect from a true luxury home. The gourmet kitchen, complete with dual Wolf ovens and a 6-burner stove, is a chef's dream come true. The custom wet bar, beverage refrigerators, and skylights that let in natural light on all levels add to the home's warm and inviting atmosphere. Step outside and bask in the beauty of the spacious outdoor living spaces, including more than 3000 square feet of deck space, outdoor patios, an infinity pool, and a relaxing Jacuzzi, all surrounded by the organic-like design. Every detail was meticulously attended to in the construction of this warm and contemporary home, with exquisite finish materials and breathtaking whitewater views of Main Beach and the legendary Catalina sunsets. Embrace the ultimate coastal living experience at the Wave House, where elegance, comfort, and breathtaking views meet. Don't miss your chance to make this stunning abode your own!
                                                 </div>
                                              </div>
-                                             <div class="descript-map">
+                                             <div class="descript-map" data-aos="fade-up">
                                                 <div id="our-properties-single-map" class="our-properties-single-map testersss">
                                                    <iframe width="680" height="482" id="gmap_canvas" src="https://maps.google.com/maps?q=1712 Thurston Dr., Laguna Beach, California 92651&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>                                              
                                                 </div>
                                              </div>
                                           </div>
-                                          <div class="col-md-4">
-                                             <div class="our-properties-single-thumbnail-list clearfix">
+                                          <div class="col-md-4" >
+                                             <div class="our-properties-single-thumbnail-list clearfix" data-aos="fade-up">
                                                 <div class="our-properties-single-thumbnail">
                                                    <img src="https://ogroup.com/wp-content/uploads/2023/02/1712-Thursten-Drive-103-1.jpg" alt="Thumbnail 1">
                                                 </div>
-                                                <div class="our-properties-single-thumbnail">
+                                                <div class="our-properties-single-thumbnail" data-aos="fade-up">
                                                    <img src="https://ogroup.com/wp-content/uploads/2023/02/1712-Thursten-Drive-88-1.jpg" alt="Thumbnail 1">
                                                 </div>
-                                                <div class="our-properties-single-thumbnail">
+                                                <div class="our-properties-single-thumbnail" data-aos="fade-up">
                                                    <img src="https://ogroup.com/wp-content/uploads/2023/02/1712-Thursten-Drive-75.jpg" alt="Thumbnail 1">
                                                 </div>
-                                                <div class="our-properties-single-add-thumbnail">
+                                                <div class="our-properties-single-add-thumbnail" data-aos="fade-up" id="btnGalery">
                                                    <img src="https://ogroup.com/wp-content/themes/ogroup.com/images/properties-single-add-thumbnail.png" alt="Add Thumbnail">
                                                 </div>
                                              </div>
 
-                                             <div class="our-properties-single-cta" data-aios-reveal="true" data-aios-animation="fadeInUp" data-aios-animation-delay="0s" data-aios-animation-reset="false" data-aios-animation-offset="0.3">
-                                                <a href="#" class="site-button our-properties-single-cta-link requ-info" data-popup="popup-wrap-request">Request Details</a>
-                                                <a href="#" class="site-button our-properties-single-cta-link sc-showing" data-popup="popup-wrap-schedule">Schedule A Showing</a>
-                                                <a href="#" class="site-button our-properties-single-cta-link">View More Listings</a>
+                                             <div class="our-properties-single-cta">
+                                               
+                                                <a class="site-button our-properties-single-cta-link requ-info"  id="myBtn" data-aos="fade-up"><label for="requesteDetail">Request Details</label></a>
+                                                <a class="site-button our-properties-single-cta-link sc-showing" id="schedule-showing-btn" data-aos="fade-up">Schedule A Showing</a>
+                                                <a class="site-button our-properties-single-cta-link"  data-aos="fade-up">View More Listings</a>
                                              </div>
 
-                                            
+                                             <!-- Schedule Showing -->
+                                             <div class="our-properties-single-smi-wrap">
+                                                <div class="our-properties-single-smi" data-aios-reveal="true"
+                                                   data-aios-animation="fadeInUp" data-aios-animation-delay="0s"
+                                                   data-aios-animation-reset="false" data-aios-animation-offset="0.3">
+                                                   <div class="our-properties-single-smi-title">Share This Listing
+                                                   </div>
+                                                   <ul>
+                                                      <li>
+                                                         <a href="#" id="orig-fb" target="_blank">
+                                                         <span class="hidden">facebook</span>
+                                                         <span class="fa fa-facebook"></span>
+                                                         </a>
+                                                      </li>
+                                                      <li>
+                                                         <a href="#" id="orig-twitter" target="_blank">
+                                                         <span class="hidden">twitter</span>
+                                                         <span class="fa fa-twitter"></span>
+                                                         </a>
+                                                      </li>
+                                                      <li>
+                                                         <a href="#" id="orig-google" target="_blank">
+                                                         <span class="hidden">Google+</span>
+                                                         <span class="fa fa-google-plus"></span>
+                                                         </a>
+                                                      </li>
+                                                      <li>
+                                                         <a href="#" id="orig-pinterest" target="_blank">
+                                                         <span class="hidden">Pinterest</span>
+                                                         <span class="fa fa-pinterest"></span>
+                                                         </a>
+                                                      </li>
+                                                   </ul>
+                                                   <div class="addtoany_shortcode">
+                                                      <div class="a2a_kit a2a_kit_size_32 addtoany_list" data-a2a-url="https://ogroup.com/listing/1712-thurston-dr/" data-a2a-title="1712 THURSTON DR."><a class="a2a_button_facebook" href="https://www.addtoany.com/add_to/facebook?linkurl=https%3A%2F%2Fogroup.com%2Flisting%2F1712-thurston-dr%2F&amp;linkname=1712%20THURSTON%20DR." title="Facebook" rel="nofollow noopener" target="_blank"></a><a class="a2a_button_twitter" href="https://www.addtoany.com/add_to/twitter?linkurl=https%3A%2F%2Fogroup.com%2Flisting%2F1712-thurston-dr%2F&amp;linkname=1712%20THURSTON%20DR." title="Twitter" rel="nofollow noopener" target="_blank"></a><a class="a2a_button_email" href="https://www.addtoany.com/add_to/email?linkurl=https%3A%2F%2Fogroup.com%2Flisting%2F1712-thurston-dr%2F&amp;linkname=1712%20THURSTON%20DR." title="Email" rel="nofollow noopener" target="_blank"></a><a class="a2a_button_pinterest" href="https://www.addtoany.com/add_to/pinterest?linkurl=https%3A%2F%2Fogroup.com%2Flisting%2F1712-thurston-dr%2F&amp;linkname=1712%20THURSTON%20DR." title="Pinterest" rel="nofollow noopener" target="_blank"></a></div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             
+
+                                             <div class="our-properties-single-cta-wrap" >
+                                                <!--  Request Information -->
+                                                <div class="popup-wrap-request pop-wrap">
+                                                   <div class="pop-outside"></div>
+                                                   <div class="request-more-info" id="request-more-info">
+                                                      <div class="request-more-info-close" >
+                                                         <span class="close-info">X</span>
+                                                      </div>
+                                                      <div class="scroll-wrap">
+                                                         <div role="form" class="wpcf7" id="wpcf7-f6-p520191-o1" lang="en-US" dir="ltr">
+                                                            <div class="screen-reader-response">
+                                                               <p role="status" aria-live="polite" aria-atomic="true"></p>
+                                                               <ul></ul>
+                                                            </div>
+                                                            <form action="/listing/1712-thurston-dr/#wpcf7-f6-p520191-o1" method="post" class="wpcf7-form init use-floating-validation-tip" novalidate="novalidate" data-status="init">
+                                                               <div style="display: none;">
+                                                                  <input type="hidden" name="_wpcf7" value="6" />
+                                                                  <input type="hidden" name="_wpcf7_version" value="5.3.2" />
+                                                                  <input type="hidden" name="_wpcf7_locale" value="en_US" />
+                                                                  <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f6-p520191-o1" />
+                                                                  <input type="hidden" name="_wpcf7_container_post" value="520191" />
+                                                                  <input type="hidden" name="_wpcf7_posted_data_hash" value="" />
+                                                                  <input type="hidden" name="_wpcf7_recaptcha_response" value="" />
+                                                               </div>
+                                                               <div id="wpcf7-64a3e4f4d6180" style="display:none !important; visibility:hidden !important;"><input type="hidden" name="form-page-source" class="form-page-source" value="https://ogroup.com/listing/1712-thurston-dr/"><input type="hidden" name="queen-bee-id" value="wpcf7-64a3e4f4d6180"><input type="hidden" name="wpcf7-64a3e4f4d6180-website-remote-address" value="127.0.0.1"><input type="hidden" name="wpcf7-64a3e4f4d6180-website-time-start" value="1688462580"><input type="hidden" name="wpcf7-64a3e4f4d6180-website-time-check" value="5"><label for="wpcf7-64a3e4f4d6180-website" class="hp-message">Choose Side:</label><input type="text" name="wpcf7-64a3e4f4d6180-website" id="wpcf7-64a3e4f4d6180-website" tabindex="-1" autocomplete="false" /></div>
+                                                               <h4 class="req-details-header">Request Details</h4>
+                                                               <p class="req-details-paragraph">Tell us how to reach you and we'll get back in touch.</p>
+                                                               <div class="container-fluid popup-form">
+                                                                  <div class="row">
+                                                                     <div class="col-md-6">
+                                                                        <label for="fname">First Name*</label>
+                                                                        <span class="wpcf7-form-control-wrap uname"><input type="text" name="uname" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" /></span>
+                                                                     </div>
+                                                                     <div class="col-md-6">
+                                                                        <label for="lname">Last Name*</label>
+                                                                        <span class="wpcf7-form-control-wrap lname"><input type="text" name="lname" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" /></span>
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="row">
+                                                                     <div class="col-md-6">
+                                                                        <label for="your-email">Email Address*</label>
+                                                                        <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" /></span>
+                                                                     </div>
+                                                                     <div class="col-md-6">
+                                                                        <label for="pnumber">Phone Number</label>
+                                                                        <span class="wpcf7-form-control-wrap pnumber"><input type="text" name="pnumber" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" /></span>
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="row">
+                                                                     <div class="col-md-6">
+                                                                        <label for="movingDate">When are you Moving?</label>
+                                                                        <span class="wpcf7-form-control-wrap movingDate"><input type="date" name="movingDate" value="" class="wpcf7-form-control wpcf7-date wpcf7-validates-as-date" aria-invalid="false" /></span>
+                                                                     </div>
+                                                                     <div class="col-md-6">
+                                                                        <label for="reachYou ">Best way to Reach you?</label>
+                                                                        <span class="wpcf7-form-control-wrap reachYou">
+                                                                           <select name="reachYou" class="wpcf7-form-control wpcf7-select" aria-invalid="false">
+                                                                              <option value="Email and Phone">Email and Phone</option>
+                                                                              <option value="Phone">Phone</option>
+                                                                              <option value="Email">Email</option>
+                                                                           </select>
+                                                                        </span>
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="row">
+                                                                     <div class="col-md-12">
+                                                                        <label for="yourmessage">Your Message</label>
+                                                                        <span class="wpcf7-form-control-wrap yourmessage"><textarea name="yourmessage" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea></span> <span class="wpcf7-form-control-wrap property-address"><textarea name="property-address" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea hidden cf-address" aria-invalid="false"></textarea></span>
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="row" style="display: none;">
+                                                                     <span class="wpcf7-form-control-wrap address"><input type="text" name="address" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Address" /></span>
+                                                                     <div>
+                                                                        <span class="wpcf7-form-control-wrap city"><input type="text" name="city" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="City" /></span>
+                                                                        <span class="wpcf7-form-control-wrap state"><input type="text" name="state" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="State" /></span>
+                                                                        <span class="wpcf7-form-control-wrap zip"><input type="text" name="zip" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Zip" /></span>
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="row">
+                                                                     <div class="col-md-12 textalignCenter">
+                                                                        <input type="submit" value="Send" class="wpcf7-form-control wpcf7-submit" />
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                               <div class="wpcf7-response-output" aria-hidden="true"></div>
+                                                            </form>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <!--  Request Information -->
+                                                <!-- Schedule Showing -->
+                                                <div class="popup-wrap-schedule pop-wrap" >
+                                                   
+                                                   <div class="pop-outside"></div>
+                                                   <div class="schedule-showing" id="schedule-showing">
+                                                      <div class="schedule-showing-close">
+                                                         <span>X</span>
+                                                      </div>
+                                                      <div class="scroll-wrap">
+                                                         <div role="form" class="wpcf7" id="wpcf7-f5-p520191-o2" lang="en-US" dir="ltr">
+                                                            <div class="screen-reader-response">
+                                                               <p role="status" aria-live="polite" aria-atomic="true"></p>
+                                                               <ul></ul>
+                                                            </div>
+                                                            <form action="/listing/1712-thurston-dr/#wpcf7-f5-p520191-o2" method="post" class="wpcf7-form init use-floating-validation-tip" novalidate="novalidate" data-status="init">
+                                                               <div style="display: none;">
+                                                                  <input type="hidden" name="_wpcf7" value="5" />
+                                                                  <input type="hidden" name="_wpcf7_version" value="5.3.2" />
+                                                                  <input type="hidden" name="_wpcf7_locale" value="en_US" />
+                                                                  <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f5-p520191-o2" />
+                                                                  <input type="hidden" name="_wpcf7_container_post" value="520191" />
+                                                                  <input type="hidden" name="_wpcf7_posted_data_hash" value="" />
+                                                                  <input type="hidden" name="_wpcf7_recaptcha_response" value="" />
+                                                               </div>
+                                                               <div id="wpcf7-64a3e4f4d64a7" style="display:none !important; visibility:hidden !important;"><input type="hidden" name="form-page-source" class="form-page-source" value="https://ogroup.com/listing/1712-thurston-dr/"><input type="hidden" name="queen-bee-id" value="wpcf7-64a3e4f4d64a7"><input type="hidden" name="wpcf7-64a3e4f4d64a7-website-remote-address" value="127.0.0.1"><input type="hidden" name="wpcf7-64a3e4f4d64a7-website-time-start" value="1688462580"><input type="hidden" name="wpcf7-64a3e4f4d64a7-website-time-check" value="5"><label for="wpcf7-64a3e4f4d64a7-website" class="hp-message">Choose Side:</label><input type="text" name="wpcf7-64a3e4f4d64a7-website" id="wpcf7-64a3e4f4d64a7-website" tabindex="-1" autocomplete="false" /></div>
+                                                               <h4 class="sched-showing-header">Schedule a Showing</h4>
+                                                               <p class="sched-showing-paragraph">Tell us how to reach you and we'll get back in touch.</p>
+                                                               <div class="container-fluid popup-form">
+                                                                  <div class="row">
+                                                                     <div class="col-md-6">
+                                                                        <label for="fname">First Name*</label>
+                                                                        <span class="wpcf7-form-control-wrap uname"><input type="text" name="uname" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" /></span>
+                                                                     </div>
+                                                                     <div class="col-md-6">
+                                                                        <label for="lname">Last Name*</label>
+                                                                        <span class="wpcf7-form-control-wrap lname"><input type="text" name="lname" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" /></span>
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="row">
+                                                                     <div class="col-md-6">
+                                                                        <label for="your-email">Email Address*</label>
+                                                                        <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" /></span>
+                                                                     </div>
+                                                                     <div class="col-md-6">
+                                                                        <label for="pnumber">Phone Number</label>
+                                                                        <span class="wpcf7-form-control-wrap pnumber"><input type="text" name="pnumber" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" /></span>
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="row">
+                                                                     <div class="col-md-6">
+                                                                        <label for="movingDate">When are you Available?</label>
+                                                                        <span class="wpcf7-form-control-wrap availableTime"><input type="date" name="availableTime" value="" class="wpcf7-form-control wpcf7-date wpcf7-validates-as-date" aria-invalid="false" /></span>
+                                                                     </div>
+                                                                     <div class="col-md-6">
+                                                                        <label for="uname">ARE YOU AVAILABLE AT ANOTHER TIME?</label>
+                                                                        <span class="wpcf7-form-control-wrap anotherTime"><input type="date" name="anotherTime" value="" class="wpcf7-form-control wpcf7-date wpcf7-validates-as-date" aria-invalid="false" /></span>
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="row">
+                                                                     <div class="col-md-12">
+                                                                        <label for="yourmessage">Your Message</label>
+                                                                        <span class="wpcf7-form-control-wrap yourmessage"><textarea name="yourmessage" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea></span><span class="wpcf7-form-control-wrap property-address"><textarea name="property-address" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea hidden cf-address" aria-invalid="false"></textarea></span>
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="row">
+                                                                     <div class="col-md-12 textalignCenter">
+                                                                        <input type="submit" value="Send" class="wpcf7-form-control wpcf7-submit" />
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                               <div class="wpcf7-response-output" aria-hidden="true"></div>
+                                                            </form>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                              
+                                             </div>
+
+                                          
                                           </div>
                                          
                                        </div>
                                     </div>
                                  </div>
 
-                                 
-
-                            
-
+                               <!-- <div class="request-modal" id="request-modal" style="z-index: 3;"></div>-->
+                                
                                  <!-- FORM INTERESTED IN  -->
-                                 <div class="our-properties-single-form-wrap">
+                                 <div class="our-properties-single-form-wrap" data-aos="fade-up" >
                                    
                                     <div class="our-properties-single-form" >
                                        <div class="container">
 										
 		
-                                          <div class="our-properties-single-form-title">Interested
+                                          <div class="our-properties-single-form-title" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">Interested
                                              In Thurston Dr.?
                                           </div>
                                           
@@ -453,10 +772,10 @@
                                  <div class="our-properties-single-links">
                                     <div class="container">
                                        <div class="row">
-                                          <div class="col-md-4 col-md-offset-2">
+                                          <div class="col-md-4 col-md-offset-2" data-aos="fade-up">
                                              <a href="#" class="site-button left">Back To Properties</a>
                                           </div>
-                                          <div class="col-md-4">
+                                          <div class="col-md-4" data-aos="fade-up">
                                              <a href="#" class="site-button right">Search MLS</a>
                                           </div>
                                        </div>
@@ -474,7 +793,7 @@
             <!-- end of #inner-page-wrapper -->
          </main>
         
-         <footer class="footer">
+         <footer class="footer" data-aos="fade-up">
             <div class="footer-wrap" >
                <div id="hp-contact" class="hp-contact">
                   <div class="contact-wrap">
@@ -482,13 +801,13 @@
                         <div class="row">
                            <div class="col-md-8 col-md-offset-2">
                               <div class="textwidget custom-html-widget">
-                                 <div class="contact-title site-section-title">
+                                 <div class="contact-title site-section-title" data-aos="fade-up">
                                     <span>
                                        Join Our <b>Network</b>
                                        <i class="title-line"></i>
                                     </span>
                                  </div>
-                                 <div class="contact-subtitle">Keep up to date with the latest market trends and opportunities in<br> Los Angeles, Orange County, San Diego and Cabo San Lucas.</div>
+                                 <div class="contact-subtitle" data-aos="fade-up">Keep up to date with the latest market trends and opportunities in<br> Los Angeles, Orange County, San Diego and Cabo San Lucas.</div>
                                  <div class="contact-form">
 									<form action="" method="post" >
 										<div class="form-group row ">
@@ -517,7 +836,7 @@
                   </div>
                </div>
 
-               <div class="container">
+               <div class="container" data-aos="fade-up">
                   <div class="footer-top" style="display: block;">
                      <div class="row">
                         <div class="col-md-5">
@@ -593,7 +912,7 @@
                            </div>
                         </div>
                      </div>
-                     <div class="footer-address-list">
+                     <div class="footer-address-list" data-aos="fade-up">
                         <div class="textwidget custom-html-widget">
                            <a href="#" target="_blank" class="footer-address">
                               <img  src="img/footer-adress/footer-address-la-v1.jpg"  alt="address">
@@ -626,7 +945,7 @@
                         </div>
                      </div>
                   </div>
-                  <div class="footer-center">
+                  <div class="footer-center" data-aos="fade-up">
                      <div class="footer-logos-a">
                         <div class="textwidget custom-html-widget">
                            <div class="footer-logos-top">
@@ -654,7 +973,7 @@
                         </div>
                      </div>
                   </div>
-                  <div class="footer-badge-wrap">
+                  <div class="footer-badge-wrap" data-aos="fade-up">
                      <div class="row">
                         <div class="col-md-12">
                            <div class="textwidget custom-html-widget">
@@ -767,18 +1086,20 @@
                            </div>
                         </div>
                      </div>
-                     <div class="footer-copyright">
+                     <div class="footer-copyright" data-aos="fade-up">
                         Copyright© 2023. <span class="footer-sitename">The Oppenheim Group</span>. All rights reserved. | <a href="#" class="footer-sitemap">Sitemap</a>  Real Estate Internet Marketing by <a href="#" target="_blank" class="footer-agentimage">Agent Image</a> <br>
                         <a href="#" class="footer-sitemap">Privacy Policy</a>  | <a href="#" class="footer-sitemap">Dont Sell My Personal Information</a>
                      </div>
-                     <div class="footer-logos-b">
+                     <div class="footer-logos-b" >
                         <div class="textwidget custom-html-widget">
                            <img  src="img/footer-img-1/footer-logos-b-1.png">
                            <img  src="img/footer-img-1/footer-logos-b-2.png">
                            <img  src="img/footer-img-1/footer-logos-b-3.png" >
                            <img  src="img/footer-img-1/footer-logos-b-4.png" >
                            <img  src="img/footer-img-1/footer-logos-b-5.png">
-                           <a href="#" target="_blank" ><img src="img/footer-img-1/footer-logos-b-7.png" ></a>
+                           <a href="#" target="_blank" >
+                              <img src="img/footer-img-1/footer-logos-b-7.png" >
+                           </a>
                            <img  src="img/footer-img-1/LH-horiz_no-BG-1.png" style="margin-top: -10px;">
                            <a href="#" target="_blank" aria-label="Agentimage" >
                               <svg width="542" height="96" viewBox="0 0 542 96" fill="none" xmlns="http://www.w3.org/2000/svg" style="max-width: 224px; width: 100%; height: auto;">
@@ -824,26 +1145,109 @@
             </div>
          </footer>
       </div>
-   
-
-      <script type="text/javascript">
-         // Initialize Animate-On-Scroll
-         if (typeof AOS !== 'undefined') {
-         	AOS.init({
-         	disable: 'mobile'
-         	});
-         }
-      </script>
-  
+     
 
    </body>
 
+   <script>
+
+      var show_hide_btn = document.getElementById("show-hide-btn");
+      var show_hide_div = document.getElementById("properties-single-slideshow-info");
+      var requestModal  = document.getElementById("request-modal");
+      var openModalImage = document.getElementById("our-properties-single-floating-thumbnail-wrap");
+      var btnOpenImage = document.getElementById("btnGalery");
+      var btnCloseImage = document.getElementById("our-properties-single-floating-thumbnail-close");
+ 
+      btnCloseImage.onclick = function(){
+         openModalImage.classList.remove("active")
+      }
+
+      btnOpenImage.onclick = function(){
+         if(openModalImage.classList.contains('active')){
+            openModalImage.classList.remove("active")
+        }else{
+        
+         openModalImage.classList.add("active")
+        }
+      }
+
+      show_hide_btn.onclick = function(){
+       
+        if(show_hide_div.classList.contains('active')){
+         show_hide_div.classList.remove("active")
+        }else{
+        
+         show_hide_div.classList.add("active")
+        }
+      }
+
+      var modal1 = document.getElementById("request-more-info");
+
+      // Get the button that opens the modal
+      var btn1 = document.getElementById("myBtn");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("request-more-info-close")[0];
+
+      // When the user clicks on the button, open the modal
+      btn1.onclick = function() {
+      modal1.style.display = "block";
+      requestModal.classList.add("active")
+      }
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+      modal1.style.display = "none";
+      requestModal.classList.add("active")
+      }
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+      if (event.target == modal) {
+         modal1.style.display = "none";
+      }
+      }
+
+
+      // Get the modal
+      var modal = document.getElementById("schedule-showing");
+
+      // Get the button that opens the modal
+      var btn = document.getElementById("schedule-showing-btn");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("schedule-showing-close")[0];
+
+      // When the user clicks on the button, open the modal
+      btn.onclick = function() {
+      modal.style.display = "block";
+      }
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+      modal.style.display = "none";
+      }
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+      if (event.target == modal) {
+         modal.style.display = "none";
+      }
+      }
+   </script>
+  
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+      AOS.init();
+    </script>
+    <script src="https://kit.fontawesome.com/3864bbfe83.js" crossorigin="anonymous"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
    <script src="js/vendor/jquery-2.2.4.min.js"></script>
    <script src="js/vendor/bootstrap.min.js"></script>			
-   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>							
+   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>			
+ 		
    <script src="js/main.js"></script>	
 
    <script>
